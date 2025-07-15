@@ -17,7 +17,6 @@ CREATE TABLE Cars (
 );
 
 -- Insert 30 Rows of Sample Car Data
--- Insert rows from CarID 1 to 30
 
 INSERT INTO Cars (CarID, Brand, Model, Year, EngineType, FuelType, TransmissionType, Color, Mileage, Price)
 VALUES
@@ -110,7 +109,7 @@ select* from cars
 where price > (select avg(price) from cars where fueltype = 'Gasoline')
 and fueltype = 'Gasoline';
 
--- 4.	Find the brand with the most car models in the dataset
+-- 4.	Find the brand with the most car models in the dataset  
 SELECT Brand
 from cars
 group by brand 
