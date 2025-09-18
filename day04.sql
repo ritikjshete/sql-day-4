@@ -12,7 +12,7 @@ CREATE TABLE Cars (
     FuelType VARCHAR(20),
     TransmissionType VARCHAR(20),
     Color VARCHAR(20),
-    Mileage INT,
+    Mileage INT, 
     Price DECIMAL(10, 2)
 );
 
